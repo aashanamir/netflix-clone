@@ -14,6 +14,8 @@ const Home = () => {
       <List title="Comedy Movies" fetchURl={userRequests.fetchComedyMovies}/>
       <List title="Horror Movies" fetchURl={userRequests.fetchHorrorMovies}/>
       <List title="Thiller Movies" fetchURl={userRequests.fetchThillerMovies}/>
+      <List title="Thiller Movies" fetchURl={userRequests.fetchThillerMovies}/>
+      <List title="Netflix Originals" isPoster fetchURl={userRequests.fetchNetflixOriginals}/>
     </div>
   );
 };
