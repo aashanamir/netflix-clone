@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: linear 0.3s;
+  z-index: 99;
+    &.navbar-dark{
+        background-color: black;
+    }
+  .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .logo {
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .avataar {
+      width: 38px;
+      height: 32px;
+    //   border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        // border-radius: 50%;
+      }
+    }
+  }
+}

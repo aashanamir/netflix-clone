@@ -1,0 +1,144 @@
+@import "../../style-config/mixin.scss";
+@import "../../style-config/variable.scss";
+
+.app-wrapper{
+  overflow: hidden;
+}
+
+.intro-page {
+  position: relative;
+  background: url(../../images/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  @include small-sreen{
+    height: 120vh;
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    @include small-sreen{
+      width: 90%;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        width: 220px;
+        height: 120px;
+        @include small-sreen{
+          width: 140px;
+          height: 75px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .right-side {
+        button {
+          background-color: $red;
+          color: $white;
+          padding: 8px 14px;
+          border: 0px;
+          border-radius: 8px;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .body {
+      display: grid;
+      place-items: center;
+      position: relative;
+      top: 90px;
+      @include small-sreen{
+        display: flex;
+        flex-direction: column;
+      }
+      h2 {
+        @include typography(48px, 700, 2);
+        @include small-sreen{
+        @include typography(38px, 700, 1.5);
+        }
+      }
+      h3 {
+        @include typography(24px, 500, 2);
+        @include small-sreen{
+          @include typography(18px, 700, 2);
+          }
+      }
+      h4 {
+        @include typography(22px, 500, 2);
+        @include small-sreen{
+          @include typography(16px, 500, 2);
+          text-align: center;
+          }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        margin-top: 12px;
+        @include small-sreen{
+          flex-direction: column;
+          column-gap: 0;
+          row-gap: 8px;
+        }
+        input {
+          width: 380px;
+          height: 58px;
+          padding: 12px;
+          background-color: transparent;
+          border: 1px solid $white;
+          outline: transparent;
+          border-radius: 8px;
+          color: $white;
+          font-size: 18px;
+          letter-spacing: 2px;
+          @include small-sreen{
+            width: 100%;
+          }
+        }
+        button {
+          height: 60px;
+          width: 170px;
+          border-radius: 8px;
+          background-color: $red;
+          color: $white;
+          font-size: 24px;
+          font-weight: 600;
+          cursor: pointer;
+          border: 0;
+          @include small-sreen{
+            width: 40%;
+            font-size: 18px;
+            height: auto;
+            width: auto;
+            padding: 8px 14px;
+          }
+        }
+      }
+    }
+  }
+}

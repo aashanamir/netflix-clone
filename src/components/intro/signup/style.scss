@@ -1,0 +1,28 @@
+@import "../../../style-config/variable.scss";
+
+.signUp-container{
+    position: absolute;
+    top: -108px;
+    background-color: $black-light;
+    padding: 78px;
+    border-radius: 28px;
+    border-radius: 8px;
+    text-align: center;
+    // height: 438px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h4{
+        font-size: 14px;
+        span{
+            font-weight: 700;
+            font-weight: 14px;
+        }
+    &:hover{
+        cursor: pointer;
+        
+    }}
+
+}
